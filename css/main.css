@@ -1,0 +1,192 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Settings: used with preprocessors and contain font, colors definitions, etc.
+2.0 - Tools: globally used mixins and functions. Use for preprocessor only.
+3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. 
+4.0 - Elements: styling for bare/generic HTML elements 
+        - Forms
+        - Lists
+        - Media
+        - Tables
+        - Typography: Headings, Paragraphs, Blockquotes, Anchors
+5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks
+        - Framework
+6.0 - Components: specific designed components
+        - Buttons
+        - Header
+        - Navigation 
+7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
+        - Alignment        
+        - Color
+        - Size
+
+/*--------------------------------------------------------------
+3.0 -GENERIC 
+-------------------------------------------------------------- */
+html {
+	font-size: 1rem;
+	font-family: 'Inter', sans-serif;
+}
+
+
+
+/*--------------------------------------------------------------
+4.0 - ELEMENTS 
+-------------------------------------------------------------- */
+/*--TYPOGRAPHY--*/
+
+h1 {
+	font-size:3.5rem;
+	line-height: 1.25em;
+	margin-bottom:.5em;
+	font-family: 'Mukta', sans-serif;
+}
+
+h2 {
+	font-size: 2rem;
+	line-height: .75em;
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+	font-family: 'Mukta', sans-serif;
+}
+
+
+p {
+	font-size: .95rem;
+	line-height: 1.75em;
+	margin-bottom: .75em;
+}
+
+header p {
+	margin-top:.25em;
+	margin-bottom: 1em;
+}
+
+header p {
+	font-size:.75rem;
+	line-height: 2em;
+} 
+
+nav {
+	float: left;
+}
+li {
+	text-transform: uppercase;
+	padding: 10px;
+	display: inline;
+	float: left;
+}
+/*COLOR--DESIGN*/
+
+
+.wrapper-blue {
+width: 100%;
+	height: 40px;
+	background-color:#F1BC32;
+}
+
+.wrapper-blue p {
+	color:#FDFBFB;
+}
+
+.wrapper-blue span p {
+	float: right;
+	color: #FCF9F9;
+}
+.logo {
+	font-size: 50px;
+	font-family:'Passion One', cursive;
+}
+
+p span, #welcome-buson {
+	color: #2B7C86;
+}
+
+header {
+	height: 700px;
+	width: 100%;
+}
+
+#background-image {
+	background-image: url("../img/kitchen-web.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.welcome h1, .logo, li {
+	color:#E95C11;
+}
+.welcome h1 {
+	text-transform: uppercase;
+	font-family:'Passion One', cursive;
+}
+
+#welcome-buson, a {
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.light-blue-wrapper {
+	background-color:#F7F8D4;
+}
+
+a {
+webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -o-border-radius: 12px;
+    -ms-border-radius: 12px;
+    border-radius: 12px;
+	padding: 10px;
+	background-color:#F1BC32;
+	color:#FCFAFA;
+}
+/*--------------------------------------------------------------
+5.0 - OBJECTS
+-------------------------------------------------------------- */
+/*FRAMEWORK*/
+
+
+
+
+
+@media screen and (min-width:768px){
+	
+html {
+		font-size: 1.3rem;
+	}
+	
+.wrapper {
+		width: 75%;
+}
+	
+h1 {
+		font-size: 3.5rem;
+		line-height: 1.25em;
+		margin-top: 1.5em;
+		margin-bottom: .5em;
+}
+}
+	
+@media screen and (min-width:1024px) {
+
+html {
+		font-size: 1.2rem;
+	}
+	
+.wrapper {
+		width: 50%;
+}
+	
+h1 {
+		font-size: 3rem;
+		margin-top: 1em;
+}
+	
+}
+
+
+
